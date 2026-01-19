@@ -6,7 +6,7 @@
 #SBATCH --exclusive
 #SBATCH --cpus-per-task=2
 #SBATCH --time=00:30:00
-#SBATCH --output=run-dftb-64bit-task.out
+#SBATCH --output=run-dftb-128bit-task.out
 
 set -euo pipefail
 echo "Starting job on $(date)"

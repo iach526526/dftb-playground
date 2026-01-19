@@ -1,7 +1,7 @@
 InputVersion = "24.1"
 
 Geometry = GenFormat {
-  <<< out_128.gen
+  <<< out32768.gen
 }
 
 Driver = {}
