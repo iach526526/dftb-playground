@@ -1,0 +1,39 @@
+InputVersion = "24.1"
+
+Geometry = GenFormat {
+  <<< out_128.gen
+}
+
+Driver = {}
+
+Hamiltonian = DFTB {
+  Scc = Yes
+  MaxAngularMomentum {
+    Si = "p"
+    C = "p"
+  }
+  # EwaldParameter = 0.1
+  SlaterKosterFiles = Type2FileNames {
+    Prefix = "pbc-0-3/"
+    Separator = "-"
+    Suffix = ".skf"
+  }
+  KPointsAndWeights = SupercellFolding {
+    4   0   0
+    0   4   0
+    0   0   4
+    0.5 0.5 0.5
+  }
+  Filling = Fermi {
+    Temperature [K] = 40
+  }
+}
+Parallel = {
+  Groups = 16
+  
+  UseOmpThreads = Yes
+}
+
+# Analysis {
+#   PrintForces = Yes
+# }

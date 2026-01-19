@@ -1,0 +1,4 @@
+*.log
+*.out
+aps_*/
+Temporary/
