@@ -1,7 +1,7 @@
 InputVersion = "24.1"
 
 Geometry = GenFormat {
-  <<< out32768.gen
+  <<< 64.gen
 }
 
 Driver = {}
@@ -29,7 +29,7 @@ Hamiltonian = DFTB {
   }
 }
 Parallel = {
-  Groups = 16
+  Groups = 1
   
   UseOmpThreads = Yes
 }
