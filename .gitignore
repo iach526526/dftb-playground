@@ -2,3 +2,7 @@
 *.out
 aps_*/
 Temporary/
+*.zip
+vtune_*/
+*.bin
+achive/
